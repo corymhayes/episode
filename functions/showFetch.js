@@ -1,5 +1,9 @@
 const fetch = require('node-fetch')
 
+const getRandomNumber = (max) => {
+  return Math.floor(Math.random() * max) + 1
+}
+
 exports.handler = async function(event, context) {
   const query = event.queryStringParameters.show
 
