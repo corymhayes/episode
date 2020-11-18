@@ -1,11 +1,12 @@
-import React, { useContext, useState, useEffect } from 'react'
+import React, { useContext, useState } from 'react'
 import { PositionDispatchContext } from '../context/PositionProvider'
 import { DataDispatchContext, DataContext } from '../context/DataProvider'
-import { LoadingContext, LoadingDispatchContext } from '../context/LoadingProvider'
+// import { LoadingContext, LoadingDispatchContext } from '../context/LoadingProvider'
+import { LoadingDispatchContext } from '../context/LoadingProvider'
 import { BiArrowBack, BiRefresh } from 'react-icons/bi'
 import { BrowserView, MobileView } from 'react-device-detect'
 
-import Loading from './Loading'
+// import Loading from './Loading'
 
 import { 
   Container, 
@@ -40,7 +41,7 @@ function Show() {
   const setLoading = useContext(LoadingDispatchContext)
 
   const data = useContext(DataContext)
-  const loading = useContext(LoadingContext)
+  // const loading = useContext(LoadingContext)
 
   let [backArrow, triggerBackArrow] = useState(false)
   let [refresh, triggerRefresh] = useState(false)
