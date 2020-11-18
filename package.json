@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "framer-motion": "^2.9.4",
+    "node-fetch": "^2.6.1",
     "react": "^17.0.1",
     "react-device-detect": "^1.14.0",
     "react-dom": "^17.0.1",
