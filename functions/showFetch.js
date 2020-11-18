@@ -19,7 +19,7 @@ exports.handler = async function(event, context) {
    
     return {
       statusCode: 200,
-      body: {
+      body: JSON.stringify({
         show_name: query,
         episode_number: randomEpisode.episode_number,
         name: randomEpisode.name,
@@ -27,7 +27,7 @@ exports.handler = async function(event, context) {
         season_number: randomEpisode.season_number,
         vote_average: randomEpisode.vote_average,
         poster_path: numberOfEpisodesData.poster_path
-      }
+      })
     }
   }
 }
