@@ -49,7 +49,7 @@ function Show() {
   const reloadData = async () => {
     setLoading(true)
     triggerRefresh(false)
-    const showRes = await fetch(`http://192.168.1.91:3030/${data.show_name}`)
+    const showRes = await fetch(`../../.netlify/functions/showFetch?show=${data.show_name}`)
     const showJSON = await showRes.json()
     setData(showJSON)
     setLoading(false)

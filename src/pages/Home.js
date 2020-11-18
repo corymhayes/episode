@@ -28,10 +28,7 @@ function Home() {
     let cleanString = addDashes.replaceAll(/[^0-9a-zA-Z-]/g, "").toLowerCase()
     const showRes = await fetch(`../../.netlify/functions/showFetch?show=${cleanString}`)
     const showJSON = await showRes.json()
-
-    console.log(showJSON)
-
-    // setData(showJSON)
+    setData(showJSON)
     // setLoading(false)
   }
 
