@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-weight: 300;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  width: 100vw;
+  background-color: #1b1b1b;
+}
+
+.route-wrapper {
+  position: relative;
+}
+
+.route-wrapper > div {
+  position: absolute;
+}
