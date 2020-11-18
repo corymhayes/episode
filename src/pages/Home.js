@@ -26,7 +26,6 @@ function Home() {
     let show = data.show
     let addDashes = show.replaceAll(" ", "-")
     let cleanString = addDashes.replaceAll(/[^0-9a-zA-Z-]/g, "").toLowerCase()
-    // const showRes = await fetch(`http://192.168.1.91:3030/${cleanString}`)
     const showRes = await fetch(`../../.netlify/functions/showFetch?show=${cleanString}`)
     const showJSON = await showRes.json()
 

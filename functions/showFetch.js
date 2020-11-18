@@ -6,8 +6,6 @@ exports.handler = async function(event, context) {
   // const showSearch = await fetch(`https://api.themoviedb.org/3/search/tv?api_key=a3014d2e6db95934fd2619ce49e4cbad&language=en-US&page=1&query=${query}&include_adult=false`)
   // const showData = await showSearch.json()
 
-  // console.log(showData)
-
   return { 
     statusCode: 200,
     body: JSON.stringify({ message: 'hello' })
