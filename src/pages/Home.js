@@ -36,16 +36,15 @@ function Home() {
   const onSubmit = async (data) => {
     document.activeElement.blur()
     setLoading(true)
-    // setData([])
+    setData([])
     setPosition('-100vw')
-    setTimeout(() => setLoading(false), 3000)
-    // let show = data.show
-    // let addDashes = show.replaceAll(" ", "-")
-    // let cleanString = addDashes.replaceAll(/[^0-9a-zA-Z-]/g, "").toLowerCase()
-    // const showRes = await fetch(`../../.netlify/functions/showFetch?show=${cleanString}`)
-    // const showJSON = await showRes.json()
-    // setData(showJSON)
-    // setLoading(false)
+    let show = data.show
+    let addDashes = show.replaceAll(" ", "-")
+    let cleanString = addDashes.replaceAll(/[^0-9a-zA-Z-]/g, "").toLowerCase()
+    const showRes = await fetch(`../../.netlify/functions/showFetch?show=${cleanString}`)
+    const showJSON = await showRes.json()
+    setData(showJSON)
+    setLoading(false)
   }
 
   const handleFocus = () => {
