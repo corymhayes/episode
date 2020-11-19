@@ -29,7 +29,7 @@ function Home() {
     const showRes = await fetch(`../../.netlify/functions/showFetch?show=${cleanString}`)
     const showJSON = await showRes.json()
     setData(showJSON)
-    // setLoading(false)
+    setLoading(false)
   }
 
   const handleFocus = () => {

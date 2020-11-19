@@ -1,12 +1,11 @@
 import React, { useContext, useState } from 'react'
 import { PositionDispatchContext } from '../context/PositionProvider'
 import { DataDispatchContext, DataContext } from '../context/DataProvider'
-// import { LoadingContext, LoadingDispatchContext } from '../context/LoadingProvider'
-import { LoadingDispatchContext } from '../context/LoadingProvider'
+import { LoadingContext, LoadingDispatchContext } from '../context/LoadingProvider'
 import { BiArrowBack, BiRefresh } from 'react-icons/bi'
 import { BrowserView, MobileView } from 'react-device-detect'
 
-// import Loading from './Loading'
+import Loading from './Loading'
 
 import { 
   Container, 
@@ -41,7 +40,7 @@ function Show() {
   const setLoading = useContext(LoadingDispatchContext)
 
   const data = useContext(DataContext)
-  // const loading = useContext(LoadingContext)
+  const loading = useContext(LoadingContext)
 
   let [backArrow, triggerBackArrow] = useState(false)
   let [refresh, triggerRefresh] = useState(false)
@@ -56,9 +55,9 @@ function Show() {
   }
 
   return (
-    // loading ? 
-    //   <Loading />
-    //   :
+    loading ? 
+      <Loading />
+      :
       <>
       <BrowserView>
         <Container>
@@ -76,15 +75,6 @@ function Show() {
             </Nav>
             
             <Logo>episode.</Logo>
-
-            <EpisodeNameTitle>title</EpisodeNameTitle>
-            <EpisodeName>{data.name}</EpisodeName>
-            
-            <EpisodeOverviewTitle>overview</EpisodeOverviewTitle>
-            <EpisodeOverview>
-              {data.overview}
-            </EpisodeOverview>
-
             <SERContainer>
               <StatContainer>
                 S <StatNumber>{data.season_number}</StatNumber>
@@ -98,6 +88,15 @@ function Show() {
                 R <StatNumber>{data.vote_average && data.vote_average.toFixed(1)}</StatNumber>
               </StatContainer>
             </SERContainer>
+            <EpisodeNameTitle>title</EpisodeNameTitle>
+            <EpisodeName>{data.name}</EpisodeName>
+            
+            <EpisodeOverviewTitle>overview</EpisodeOverviewTitle>
+            <EpisodeOverview>
+              {data.overview}
+            </EpisodeOverview>
+
+   
           </DetailsContainer>
         </Container>
       </BrowserView>

@@ -78,7 +78,7 @@ export const EpisodeName = styled(motion.div)`
 
   .skeleton {
     height: 4rem;
-    background: linear-gradient(to right, transparent, rgba(255,255,255,0.25));
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.1));
     margin-bottom: 1rem;
   }
 `

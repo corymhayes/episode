@@ -60,7 +60,7 @@ export const Logo = styled.h3`
 `
 
 export const EpisodeNameTitle = styled.h3`
-  grid-row: 2;
+  grid-row: 3;
   grid-column: 1;
   place-self: start end;
   font-family: 'DM Mono', monospaced;
@@ -72,7 +72,7 @@ export const EpisodeNameTitle = styled.h3`
   `
   
 export const EpisodeName = styled.h1`
-  grid-row: 2;
+  grid-row: 3;
   grid-column: 2;
   font-family: 'DM Mono', monospaced;
   font-size: 4.8rem;
@@ -82,7 +82,7 @@ export const EpisodeName = styled.h1`
 `
 
 export const EpisodeOverviewTitle = styled.h3`
-  grid-row: 3;
+  grid-row: 4;
   grid-column: 1;
   place-self: start end;
   font-family: 'DM Mono', monospaced;
@@ -94,7 +94,7 @@ export const EpisodeOverviewTitle = styled.h3`
 `
 
 export const EpisodeOverview = styled.p`
-  grid-row: 3;
+  grid-row: 4;
   grid-column: 2;
   font-family: 'DM Mono', monospaced;
   font-size: 2rem;
@@ -103,10 +103,9 @@ export const EpisodeOverview = styled.p`
 `
 
 export const SERContainer = styled.div`
-  grid-row: 4;
+  grid-row: 2;
   grid-column: 2;
   width: 100%;
-  margin-top: 5rem;
   display: flex;
   justify-content: space-between;
 `

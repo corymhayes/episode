@@ -34,16 +34,18 @@ function Loading() {
 
           <EpisodeNameTitle>title</EpisodeNameTitle>
           <EpisodeName>
+            <div style={{ position: 'absolute', width: '45rem', height: '4rem', backgroundColor: 'rgba(0,0,0,0.25)' }} />
             <motion.div 
               initial={{ x: 0, opacity: 1 }}
-              animate={{ x: '45rem', opacity: 0 }}
+              animate={{ x: '35rem', opacity: 0 }}
               transition={{ repeat: Infinity, duration: 0.5 }} 
               className="skeleton" 
               style={{ width: '10rem' }} 
             />
+            <div style={{ position: 'absolute', width: '35rem', height: '4rem', backgroundColor: 'rgba(0,0,0,0.25)' }} />
             <motion.div 
               initial={{ x: 0, opacity: 1 }}
-              animate={{ x: '40rem', opacity: 0 }}
+              animate={{ x: '25rem', opacity: 0 }}
               transition={{ repeat: Infinity, duration: 0.5 }} 
               className="skeleton" 
               style={{ width: '10rem' }} 
@@ -52,30 +54,34 @@ function Loading() {
           
           <EpisodeOverviewTitle>overview</EpisodeOverviewTitle>
           <EpisodeOverview>
+            <div style={{ position: 'absolute', width: '45rem', height: '2rem', backgroundColor: 'rgba(0,0,0,0.25)' }} />
             <motion.div 
               initial={{ x: 0, opacity: 1 }}
-              animate={{ x: '45rem', opacity: 0 }}
+              animate={{ x: '35rem', opacity: 0 }}
               transition={{ repeat: Infinity, duration: 0.5 }} 
               className="skeleton" 
               style={{ width: '10rem' }} 
             />
+            <div style={{ position: 'absolute', width: '38rem', height: '2rem', backgroundColor: 'rgba(0,0,0,0.25)' }} />
             <motion.div 
               initial={{ x: 0, opacity: 1 }}
-              animate={{ x: '43rem', opacity: 0 }}
+              animate={{ x: '28rem', opacity: 0 }}
               transition={{ repeat: Infinity, duration: 0.5 }} 
               className="skeleton" 
               style={{ width: '10rem' }} 
             />
+            <div style={{ position: 'absolute', width: '42rem', height: '2rem', backgroundColor: 'rgba(0,0,0,0.25)' }} />
             <motion.div 
               initial={{ x: 0, opacity: 1 }}
-              animate={{ x: '38rem', opacity: 0 }}
+              animate={{ x: '32rem', opacity: 0 }}
               transition={{ repeat: Infinity, duration: 0.5 }} 
               className="skeleton" 
               style={{ width: '10rem' }} 
             />
+            <div style={{ position: 'absolute', width: '40rem', height: '2rem', backgroundColor: 'rgba(0,0,0,0.25)' }} />
             <motion.div 
               initial={{ x: 0, opacity: 1 }}
-              animate={{ x: '40rem', opacity: 0 }}
+              animate={{ x: '30rem', opacity: 0 }}
               transition={{ repeat: Infinity, duration: 0.5 }} 
               className="skeleton" 
               style={{ width: '10rem' }} 
