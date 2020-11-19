@@ -119,7 +119,7 @@ function Show() {
 
             <MobileEpisodeOverviewTitle>overview</MobileEpisodeOverviewTitle>
             <MobileEpisodeOverview>
-              {data.overview}              
+              {data.overview}
             </MobileEpisodeOverview>
 
             <MobileSERContainer>

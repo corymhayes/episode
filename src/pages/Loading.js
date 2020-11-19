@@ -87,20 +87,6 @@ function Loading() {
               <MobileLogo>episode.</MobileLogo>
             </MobileNav>
 
-            <MobileEpisodeNameTitle>title</MobileEpisodeNameTitle>
-            <MobileEpisodeName>
-              <div className="skeleton" />
-              <div className="skeleton" />
-            </MobileEpisodeName>
-            
-            <MobileEpisodeOverviewTitle>overview</MobileEpisodeOverviewTitle>
-            <MobileEpisodeOverview>
-              <div className="skeleton" />
-              <div className="skeleton" />
-              <div className="skeleton" />
-              <div className="skeleton" />
-            </MobileEpisodeOverview>
-            
             <MobileSERContainer>
               <StatContainer>
                 S <StatNumber>0</StatNumber>
@@ -114,6 +100,20 @@ function Loading() {
                 R <StatNumber>0</StatNumber>
               </StatContainer>
             </MobileSERContainer>
+
+            <MobileEpisodeNameTitle>title</MobileEpisodeNameTitle>
+            <MobileEpisodeName>
+              <div className="skeleton" style={{ width: '28rem' }} />
+              <div className="skeleton" style={{ width: '25rem' }} />
+            </MobileEpisodeName>
+            
+            <MobileEpisodeOverviewTitle>overview</MobileEpisodeOverviewTitle>
+            <MobileEpisodeOverview>
+              <div className="skeleton" style={{ width: '28rem' }} />
+              <div className="skeleton" style={{ width: '23rem' }} />
+              <div className="skeleton" style={{ width: '25rem' }} />
+              <div className="skeleton" style={{ width: '20rem' }} />
+            </MobileEpisodeOverview>
           </MobileDetailsContainer>
         </MobileContainer>
       </MobileView>
@@ -122,48 +122,3 @@ function Loading() {
 }
 
 export default Loading
-
-
-
-
-/*
-
-      <MobileView>
-        <MobileContainer>
-          <MobileDetailsContainer>            
-            <MobileNav>
-              <MobileIconContainer>
-                <BiArrowBack className="iconStyle" onMouseEnter={() => triggerBackArrow(true)} onMouseLeave={() => triggerBackArrow(false)} onClick={() => setPosition(0)} />
-                <BiRefresh className="iconStyle" onMouseEnter={() => triggerRefresh(true)} onMouseLeave={() => triggerRefresh(false)} onClick={() => reloadData()} />
-              </MobileIconContainer>
-
-              <MobileLogo>episode.</MobileLogo>
-            </MobileNav>
-
-            <MobileEpisodeNameTitle>title</MobileEpisodeNameTitle>
-            <MobileEpisodeName>{data.name}</MobileEpisodeName>
-
-            <MobileEpisodeOverviewTitle>overview</MobileEpisodeOverviewTitle>
-            <MobileEpisodeOverview>
-              {data.overview}              
-            </MobileEpisodeOverview>
-
-            <MobileSERContainer>
-              <StatContainer>
-                S <StatNumber>{data.season_number}</StatNumber>
-              </StatContainer>
-              
-              <StatContainer>
-                E <StatNumber>{data.episode_number}</StatNumber>
-              </StatContainer>
-              
-              <StatContainer>
-                R <StatNumber>{data.vote_average && data.vote_average.toFixed(1)}</StatNumber>
-              </StatContainer>
-            </MobileSERContainer>
-          </MobileDetailsContainer>
-        </MobileContainer>
-      </MobileView>
-
-
-*/

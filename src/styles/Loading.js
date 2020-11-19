@@ -207,7 +207,6 @@ export const MobileEpisodeName = styled.div`
   grid-column: 2;
 
   .skeleton {
-    width: 30rem;
     height: 4rem;
     background-color: rgba(0,0,0,0.25);
     margin-bottom: 1rem;
@@ -234,7 +233,6 @@ export const MobileEpisodeOverview = styled.div`
   grid-column: 2;
 
   .skeleton {
-    width: 30rem;
     height: 2rem;
     background-color: rgba(0,0,0,0.25);
     margin-bottom: 1rem;
