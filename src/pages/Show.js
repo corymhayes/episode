@@ -115,11 +115,11 @@ function Show() {
             </MobileNav>
 
             <MobileEpisodeNameTitle>title</MobileEpisodeNameTitle>
-            <MobileEpisodeName>{data.name}</MobileEpisodeName>
+            <MobileEpisodeName>Woman seeking dead husband </MobileEpisodeName>
 
             <MobileEpisodeOverviewTitle>overview</MobileEpisodeOverviewTitle>
             <MobileEpisodeOverview>
-              {data.overview}
+              When what begins as a little competitive sabotage in a regional spelling bee quickly escalates to murder.
             </MobileEpisodeOverview>
 
             <MobileSERContainer>

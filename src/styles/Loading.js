@@ -244,5 +244,5 @@ export const MobileSERContainer = styled.div`
   grid-column: 2;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 `

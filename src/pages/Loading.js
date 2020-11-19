@@ -44,6 +44,20 @@ function Loading() {
             
             <Logo>episode.</Logo>
 
+            <SERContainer>
+              <StatContainer>
+                S <StatNumber>0</StatNumber>
+              </StatContainer>
+              
+              <StatContainer>
+                E <StatNumber>0</StatNumber>
+              </StatContainer>
+              
+              <StatContainer>
+                R <StatNumber>0</StatNumber>
+              </StatContainer>
+            </SERContainer>
+
             <EpisodeNameTitle>title</EpisodeNameTitle>
             <EpisodeName>
               <div className="skeleton" />
@@ -58,20 +72,6 @@ function Loading() {
               <div className="skeleton" />
               <div className="skeleton" />
             </EpisodeOverview>
-            
-            <SERContainer>
-              <StatContainer>
-                S <StatNumber>0</StatNumber>
-              </StatContainer>
-              
-              <StatContainer>
-                E <StatNumber>0</StatNumber>
-              </StatContainer>
-              
-              <StatContainer>
-                R <StatNumber>0</StatNumber>
-              </StatContainer>
-            </SERContainer>
           </DetailsContainer>
         </Container>
       </BrowserView>
@@ -103,15 +103,15 @@ function Loading() {
 
             <MobileEpisodeNameTitle>title</MobileEpisodeNameTitle>
             <MobileEpisodeName>
-              <div className="skeleton" style={{ width: '28rem' }} />
-              <div className="skeleton" style={{ width: '25rem' }} />
+              <div className="skeleton" style={{ width: '26rem' }} />
+              <div className="skeleton" style={{ width: '23rem' }} />
             </MobileEpisodeName>
             
             <MobileEpisodeOverviewTitle>overview</MobileEpisodeOverviewTitle>
             <MobileEpisodeOverview>
-              <div className="skeleton" style={{ width: '28rem' }} />
-              <div className="skeleton" style={{ width: '23rem' }} />
-              <div className="skeleton" style={{ width: '25rem' }} />
+              <div className="skeleton" style={{ width: '26rem' }} />
+              <div className="skeleton" style={{ width: '22rem' }} />
+              <div className="skeleton" style={{ width: '24rem' }} />
               <div className="skeleton" style={{ width: '20rem' }} />
             </MobileEpisodeOverview>
           </MobileDetailsContainer>
