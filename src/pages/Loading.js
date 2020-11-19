@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion'
 import { BiArrowBack, BiRefresh } from 'react-icons/bi'
+import { BrowserView, MobileView } from 'react-device-detect'
 import { 
   Container, 
   DetailsContainer, 
@@ -14,96 +14,156 @@ import {
   SERContainer,
   StatContainer,
   StatNumber,
+  MobileContainer,
+  MobileDetailsContainer,
+  MobileNav,
+  MobileIconContainer,
+  MobileLogo,
+  MobileEpisodeNameTitle,
+  MobileEpisodeName,
+  MobileEpisodeOverviewTitle,
+  MobileEpisodeOverview,
+  MobileSERContainer
 } from '../styles/Loading'
 
 
 function Loading() {
   return (
-      <Container>
-        <DetailsContainer>
-          <Nav>
-            <HoverContainer />
+    <>
+      <BrowserView>
+        <Container>
+          <DetailsContainer>
+            <Nav>
+              <HoverContainer />
+              
+              <IconContainer>
+                <BiArrowBack className="iconStyle" />
+                <BiRefresh className="iconStyle" />
+              </IconContainer>
+            </Nav>
             
-            <IconContainer>
-              <BiArrowBack className="iconStyle" />
-              <BiRefresh className="iconStyle" />
-            </IconContainer>
-          </Nav>
-          
-          <Logo>episode.</Logo>
+            <Logo>episode.</Logo>
 
-          <EpisodeNameTitle>title</EpisodeNameTitle>
-          <EpisodeName>
-            <div style={{ position: 'absolute', width: '45rem', height: '4rem', backgroundColor: 'rgba(0,0,0,0.25)' }} />
-            <motion.div 
-              initial={{ x: 0, opacity: 1 }}
-              animate={{ x: '35rem', opacity: 0 }}
-              transition={{ repeat: Infinity, duration: 0.5 }} 
-              className="skeleton" 
-              style={{ width: '10rem' }} 
-            />
-            <div style={{ position: 'absolute', width: '35rem', height: '4rem', backgroundColor: 'rgba(0,0,0,0.25)' }} />
-            <motion.div 
-              initial={{ x: 0, opacity: 1 }}
-              animate={{ x: '25rem', opacity: 0 }}
-              transition={{ repeat: Infinity, duration: 0.5 }} 
-              className="skeleton" 
-              style={{ width: '10rem' }} 
-            />
-          </EpisodeName>
-          
-          <EpisodeOverviewTitle>overview</EpisodeOverviewTitle>
-          <EpisodeOverview>
-            <div style={{ position: 'absolute', width: '45rem', height: '2rem', backgroundColor: 'rgba(0,0,0,0.25)' }} />
-            <motion.div 
-              initial={{ x: 0, opacity: 1 }}
-              animate={{ x: '35rem', opacity: 0 }}
-              transition={{ repeat: Infinity, duration: 0.5 }} 
-              className="skeleton" 
-              style={{ width: '10rem' }} 
-            />
-            <div style={{ position: 'absolute', width: '38rem', height: '2rem', backgroundColor: 'rgba(0,0,0,0.25)' }} />
-            <motion.div 
-              initial={{ x: 0, opacity: 1 }}
-              animate={{ x: '28rem', opacity: 0 }}
-              transition={{ repeat: Infinity, duration: 0.5 }} 
-              className="skeleton" 
-              style={{ width: '10rem' }} 
-            />
-            <div style={{ position: 'absolute', width: '42rem', height: '2rem', backgroundColor: 'rgba(0,0,0,0.25)' }} />
-            <motion.div 
-              initial={{ x: 0, opacity: 1 }}
-              animate={{ x: '32rem', opacity: 0 }}
-              transition={{ repeat: Infinity, duration: 0.5 }} 
-              className="skeleton" 
-              style={{ width: '10rem' }} 
-            />
-            <div style={{ position: 'absolute', width: '40rem', height: '2rem', backgroundColor: 'rgba(0,0,0,0.25)' }} />
-            <motion.div 
-              initial={{ x: 0, opacity: 1 }}
-              animate={{ x: '30rem', opacity: 0 }}
-              transition={{ repeat: Infinity, duration: 0.5 }} 
-              className="skeleton" 
-              style={{ width: '10rem' }} 
-            />
-          </EpisodeOverview>
-          
-          <SERContainer>
-            <StatContainer>
-              S <StatNumber>0</StatNumber>
-            </StatContainer>
+            <EpisodeNameTitle>title</EpisodeNameTitle>
+            <EpisodeName>
+              <div className="skeleton" />
+              <div className="skeleton" />
+            </EpisodeName>
             
-            <StatContainer>
-              E <StatNumber>0</StatNumber>
-            </StatContainer>
+            <EpisodeOverviewTitle>overview</EpisodeOverviewTitle>
+            <EpisodeOverview>
+              <div className="skeleton" />
+              <div className="skeleton" />
+              <div className="skeleton" />
+              <div className="skeleton" />
+              <div className="skeleton" />
+            </EpisodeOverview>
             
-            <StatContainer>
-              R <StatNumber>0</StatNumber>
-            </StatContainer>
-          </SERContainer>
-        </DetailsContainer>
-      </Container>
+            <SERContainer>
+              <StatContainer>
+                S <StatNumber>0</StatNumber>
+              </StatContainer>
+              
+              <StatContainer>
+                E <StatNumber>0</StatNumber>
+              </StatContainer>
+              
+              <StatContainer>
+                R <StatNumber>0</StatNumber>
+              </StatContainer>
+            </SERContainer>
+          </DetailsContainer>
+        </Container>
+      </BrowserView>
+
+      <MobileView>
+        <MobileContainer>
+          <MobileDetailsContainer>
+            <MobileNav>
+              <MobileIconContainer>
+                <BiArrowBack className="iconStyle" />
+                <BiRefresh className="iconStyle" />
+              </MobileIconContainer>
+              <MobileLogo>episode.</MobileLogo>
+            </MobileNav>
+
+            <MobileEpisodeNameTitle>title</MobileEpisodeNameTitle>
+            <MobileEpisodeName>
+              <div className="skeleton" />
+              <div className="skeleton" />
+            </MobileEpisodeName>
+            
+            <MobileEpisodeOverviewTitle>overview</MobileEpisodeOverviewTitle>
+            <MobileEpisodeOverview>
+              <div className="skeleton" />
+              <div className="skeleton" />
+              <div className="skeleton" />
+              <div className="skeleton" />
+            </MobileEpisodeOverview>
+            
+            <MobileSERContainer>
+              <StatContainer>
+                S <StatNumber>0</StatNumber>
+              </StatContainer>
+              
+              <StatContainer>
+                E <StatNumber>0</StatNumber>
+              </StatContainer>
+              
+              <StatContainer>
+                R <StatNumber>0</StatNumber>
+              </StatContainer>
+            </MobileSERContainer>
+          </MobileDetailsContainer>
+        </MobileContainer>
+      </MobileView>
+    </>
   )
 }
 
 export default Loading
+
+
+
+
+/*
+
+      <MobileView>
+        <MobileContainer>
+          <MobileDetailsContainer>            
+            <MobileNav>
+              <MobileIconContainer>
+                <BiArrowBack className="iconStyle" onMouseEnter={() => triggerBackArrow(true)} onMouseLeave={() => triggerBackArrow(false)} onClick={() => setPosition(0)} />
+                <BiRefresh className="iconStyle" onMouseEnter={() => triggerRefresh(true)} onMouseLeave={() => triggerRefresh(false)} onClick={() => reloadData()} />
+              </MobileIconContainer>
+
+              <MobileLogo>episode.</MobileLogo>
+            </MobileNav>
+
+            <MobileEpisodeNameTitle>title</MobileEpisodeNameTitle>
+            <MobileEpisodeName>{data.name}</MobileEpisodeName>
+
+            <MobileEpisodeOverviewTitle>overview</MobileEpisodeOverviewTitle>
+            <MobileEpisodeOverview>
+              {data.overview}              
+            </MobileEpisodeOverview>
+
+            <MobileSERContainer>
+              <StatContainer>
+                S <StatNumber>{data.season_number}</StatNumber>
+              </StatContainer>
+              
+              <StatContainer>
+                E <StatNumber>{data.episode_number}</StatNumber>
+              </StatContainer>
+              
+              <StatContainer>
+                R <StatNumber>{data.vote_average && data.vote_average.toFixed(1)}</StatNumber>
+              </StatContainer>
+            </MobileSERContainer>
+          </MobileDetailsContainer>
+        </MobileContainer>
+      </MobileView>
+
+
+*/

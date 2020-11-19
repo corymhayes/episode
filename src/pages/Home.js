@@ -6,7 +6,22 @@ import { PositionDispatchContext } from '../context/PositionProvider'
 import { DataDispatchContext } from '../context/DataProvider'
 import { LoadingDispatchContext } from '../context/LoadingProvider'
 
-import { Container, Header, Form, Input, ErrorInput, SearchContainer, InputContainer, MobileContainer, MobileSearchContainer, MobileHeader, MobileForm, MobileInputContainer, MobileInput, MobileErrorInput } from '../styles/Home'
+import { 
+  Container, 
+  Header, 
+  Form, 
+  Input,
+  ErrorInput, 
+  SearchContainer, 
+  InputContainer, 
+  MobileContainer, 
+  MobileSearchContainer, 
+  MobileHeader, 
+  MobileForm, 
+  MobileInputContainer, 
+  MobileInput, 
+  MobileErrorInput 
+} from '../styles/Home'
 
 
 function Home() {

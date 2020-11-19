@@ -61,7 +61,7 @@ export const Logo = styled.h3`
 `
 
 export const EpisodeNameTitle = styled.h3`
-  grid-row: 2;
+  grid-row: 3;
   grid-column: 1;
   place-self: start end;
   font-family: 'DM Mono', monospaced;
@@ -73,18 +73,18 @@ export const EpisodeNameTitle = styled.h3`
   `
   
 export const EpisodeName = styled(motion.div)`
-  grid-row: 2;
+  grid-row: 3;
   grid-column: 2;
 
   .skeleton {
     height: 4rem;
-    background: linear-gradient(to right, transparent, rgba(255,255,255,0.1));
+    background-color: rgba(0,0,0,0.25);
     margin-bottom: 1rem;
   }
 `
 
 export const EpisodeOverviewTitle = styled.h3`
-  grid-row: 3;
+  grid-row: 4;
   grid-column: 1;
   place-self: start end;
   font-family: 'DM Mono', monospaced;
@@ -96,21 +96,20 @@ export const EpisodeOverviewTitle = styled.h3`
 `
 
 export const EpisodeOverview = styled.div`
-  grid-row: 3;
+  grid-row: 4;
   grid-column: 2;
 
   .skeleton {
     height: 2rem;
-    background: linear-gradient(to right, transparent, rgba(255,255,255,0.25));
+    background-color: rgba(0,0,0,0.25);
     margin-bottom: 1rem;
   }
 `
 
 export const SERContainer = styled.div`
-  grid-row: 4;
+  grid-row: 2;
   grid-column: 2;
   width: 100%;
-  margin-top: 5rem;
   display: flex;
   justify-content: space-between;
 `
@@ -133,4 +132,119 @@ export const StatNumber = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 1.6rem;
+`
+
+
+
+
+
+export const MobileContainer = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  height: -webkit-fill-available;
+  padding: 3rem 1rem;
+  `
+  
+export const MobileDetailsContainer = styled.div`
+  display: grid;
+  grid-template-columns: 10% 1fr;
+  grid-auto-rows: minmax(min-content, max-content);
+  row-gap: 4rem;
+  width: 100vw;
+  height: -webkit-fill-available;
+  place-items: start;
+`
+
+export const MobileNav = styled.div`
+  grid-row: 1;
+  grid-column: 2;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: space-between;
+
+  .iconStyle {
+    color: #fff;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+`
+
+export const MobileIconContainer = styled.div`
+  display: flex;
+`
+
+export const MobileLogo = styled.h5`
+  font-size: 1.6rem;
+  font-family: 'DM Mono', monospaced;
+  color: #ffd500;
+  margin-right: 2rem;
+`
+
+
+export const MobileEpisodeNameTitle = styled.h3`
+  grid-row: 3;
+  grid-column: 1;
+  place-self: start center;
+  font-family: 'DM Mono', monospaced;
+  font-size: 1.6rem;
+  color: #ffd500;
+  -webkit-tranform: rotate(-90deg);
+  -moz-tranform: rotate(-90deg);
+  transform: rotate(-90deg);
+  letter-spacing: 5px;
+  margin-top: 3rem;
+  margin-left: -2rem;
+  `
+  
+export const MobileEpisodeName = styled.div`
+  grid-row: 3;
+  grid-column: 2;
+
+  .skeleton {
+    width: 30rem;
+    height: 4rem;
+    background-color: rgba(0,0,0,0.25);
+    margin-bottom: 1rem;
+  }
+`
+
+export const MobileEpisodeOverviewTitle = styled.h3`
+  grid-row: 4;
+  grid-column: 1;
+  place-self: start center;
+  font-family: 'DM Mono', monospaced;
+  font-size: 1.6rem;
+  color: #ffd500;
+  letter-spacing: 5px;
+  -webkit-tranform: rotate(-90deg);
+  -moz-tranform: rotate(-90deg);
+  transform: rotate(-90deg);
+  margin-top: 5rem;
+  margin-left: -2rem;
+`
+
+export const MobileEpisodeOverview = styled.div`
+  grid-row: 4;
+  grid-column: 2;
+
+  .skeleton {
+    width: 30rem;
+    height: 2rem;
+    background-color: rgba(0,0,0,0.25);
+    margin-bottom: 1rem;
+  }
+`
+
+export const MobileSERContainer = styled.div`
+  grid-row: 2;
+  grid-column: 2;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 `

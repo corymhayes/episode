@@ -157,15 +157,6 @@ export const MobileDetailsContainer = styled.div`
   place-items: start;
 `
 
-
-
-
-
-
-
-
-
-
 export const MobileNav = styled.div`
   grid-row: 1;
   grid-column: 2;

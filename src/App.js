@@ -19,8 +19,8 @@ function App() {
         display: 'flex',
       }}
     >
-        <Home />
-        <Show />
+      <Home />
+      <Show />
     </motion.div>
   )
 }
