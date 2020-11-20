@@ -38,6 +38,7 @@ function Home() {
     setLoading(true)
     setData([])
     setPosition('-100vw')
+    // setTimeout(() => setLoading(false), 3000)
     let show = data.show
     let addDashes = show.replaceAll(" ", "-")
     let cleanString = addDashes.replaceAll(/[^0-9a-zA-Z-]/g, "").toLowerCase()

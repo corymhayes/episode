@@ -1,123 +1,35 @@
-import { BiArrowBack, BiRefresh } from 'react-icons/bi'
-import { BrowserView, MobileView } from 'react-device-detect'
-import { 
-  Container, 
-  DetailsContainer, 
-  Nav,
-  Logo,
-  EpisodeNameTitle,
-  EpisodeName, 
-  EpisodeOverviewTitle,
-  EpisodeOverview,
-  HoverContainer,
-  IconContainer,
-  SERContainer,
-  StatContainer,
-  StatNumber,
-  MobileContainer,
-  MobileDetailsContainer,
-  MobileNav,
-  MobileIconContainer,
-  MobileLogo,
-  MobileEpisodeNameTitle,
-  MobileEpisodeName,
-  MobileEpisodeOverviewTitle,
-  MobileEpisodeOverview,
-  MobileSERContainer
-} from '../styles/Loading'
+import { motion } from 'framer-motion'
 
 
 function Loading() {
   return (
-    <>
-      <BrowserView>
-        <Container>
-          <DetailsContainer>
-            <Nav>
-              <HoverContainer />
-              
-              <IconContainer>
-                <BiArrowBack className="iconStyle" />
-                <BiRefresh className="iconStyle" />
-              </IconContainer>
-            </Nav>
-            
-            <Logo>episode.</Logo>
-
-            <SERContainer>
-              <StatContainer>
-                S <StatNumber>0</StatNumber>
-              </StatContainer>
-              
-              <StatContainer>
-                E <StatNumber>0</StatNumber>
-              </StatContainer>
-              
-              <StatContainer>
-                R <StatNumber>0</StatNumber>
-              </StatContainer>
-            </SERContainer>
-
-            <EpisodeNameTitle>title</EpisodeNameTitle>
-            <EpisodeName>
-              <div className="skeleton" />
-              <div className="skeleton" />
-            </EpisodeName>
-            
-            <EpisodeOverviewTitle>overview</EpisodeOverviewTitle>
-            <EpisodeOverview>
-              <div className="skeleton" />
-              <div className="skeleton" />
-              <div className="skeleton" />
-              <div className="skeleton" />
-              <div className="skeleton" />
-            </EpisodeOverview>
-          </DetailsContainer>
-        </Container>
-      </BrowserView>
-
-      <MobileView>
-        <MobileContainer>
-          <MobileDetailsContainer>
-            <MobileNav>
-              <MobileIconContainer>
-                <BiArrowBack className="iconStyle" />
-                <BiRefresh className="iconStyle" />
-              </MobileIconContainer>
-              <MobileLogo>episode.</MobileLogo>
-            </MobileNav>
-
-            <MobileSERContainer>
-              <StatContainer>
-                S <StatNumber>0</StatNumber>
-              </StatContainer>
-              
-              <StatContainer>
-                E <StatNumber>0</StatNumber>
-              </StatContainer>
-              
-              <StatContainer>
-                R <StatNumber>0</StatNumber>
-              </StatContainer>
-            </MobileSERContainer>
-
-            <MobileEpisodeNameTitle>title</MobileEpisodeNameTitle>
-            <MobileEpisodeName>
-              <div className="skeleton" style={{ width: '26rem' }} />
-              <div className="skeleton" style={{ width: '23rem' }} />
-            </MobileEpisodeName>
-            
-            <MobileEpisodeOverviewTitle>overview</MobileEpisodeOverviewTitle>
-            <MobileEpisodeOverview>
-              <div className="skeleton" style={{ width: '26rem' }} />
-              <div className="skeleton" style={{ width: '22rem' }} />
-              <div className="skeleton" style={{ width: '24rem' }} />
-              <div className="skeleton" style={{ width: '20rem' }} />
-            </MobileEpisodeOverview>
-          </MobileDetailsContainer>
-        </MobileContainer>
-      </MobileView>
-    </>
+    <div style={{ width: '100vw', height: '-webkit-fill-available', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+      <div style={{ height: '6rem', width: '6rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <h1 style={{
+            fontFamily: 'DM Mono, monospaced',
+            fontSize: '4rem',
+            color: '#ffd500',
+            letterSpacing: '-0.75rem'
+          }}
+          >
+        e
+        </h1>
+        <motion.div
+          animate={{
+            // y: [-3, -25, -3, -15, -3, -10, -3, -5, -3]
+            y: [ -25, 2, -20, 2, -15, 2, -10, 2, -5, 2, -25 ]
+          }}
+          transition={{ duration: 1.25, repeat: Infinity }}
+          style={{
+            fontFamily: 'DM Mono, monospaced',
+            fontSize: '4rem',
+            color: '#ffd500',
+          }}
+        >
+          .
+        </motion.div>
+      </div>
+    </div>
   )
 }
 

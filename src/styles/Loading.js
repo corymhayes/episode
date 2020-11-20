@@ -200,18 +200,31 @@ export const MobileEpisodeNameTitle = styled.h3`
   letter-spacing: 5px;
   margin-top: 3rem;
   margin-left: -2rem;
-  `
+`
   
-export const MobileEpisodeName = styled.div`
+export const MobileEpisodeName = styled.h1`
   grid-row: 3;
   grid-column: 2;
 
   .skeleton {
-    height: 4rem;
+    height: 2.75rem;
     background-color: rgba(0,0,0,0.25);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 `
+
+// export const MobileEpisodeName = styled.h1`
+//   grid-row: 3;
+//   grid-column: 2;
+//   font-family: 'DM Mono', monospaced;
+//   font-weight: 400;
+//   font-size: 3.2rem;
+//   line-height: 4rem;
+//   font-style: italic;
+//   color: #efefef;
+//   height: 2rem;
+//   background-color: red;
+// `
 
 export const MobileEpisodeOverviewTitle = styled.h3`
   grid-row: 4;
@@ -235,7 +248,6 @@ export const MobileEpisodeOverview = styled.div`
   .skeleton {
     height: 2rem;
     background-color: rgba(0,0,0,0.25);
-    margin-bottom: 1rem;
   }
 `
 
