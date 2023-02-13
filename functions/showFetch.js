@@ -7,7 +7,7 @@ const getRandomNumber = (max) => {
 exports.handler = async function(event, context) {
   const query = event.queryStringParameters.show
 
-  const showSearch = await fetch(`https://api.themoviedb.org/3/search/tv?api_key=${REACT_APP_API_KEY}}&language=en-US&page=1&query=${query}&include_adult=false`)
+  const showSearch = await fetch(`https://api.themoviedb.org/3/search/tv?api_key=${process.env.REACT_APP_API_KEY}}&language=en-US&page=1&query=${query}&include_adult=false`)
   const showData = await showSearch.json()
   
   if (showData.results) {
