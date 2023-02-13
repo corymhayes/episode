@@ -96,7 +96,7 @@ function Home() {
                 </InputContainer>
             </Form>
             <Header style={{ marginTop: '2rem' }}>
-              and get a random episode
+              and get a random one
             </Header>
           </SearchContainer>
         </Container>
@@ -132,7 +132,7 @@ function Home() {
                 </MobileInputContainer>
             </MobileForm>
             <MobileHeader style={{ marginTop: '2rem' }}>
-              and get a random episode
+              and get a random one
             </MobileHeader>
           </MobileSearchContainer>
         </MobileContainer>
